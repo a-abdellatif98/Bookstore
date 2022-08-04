@@ -21,7 +21,9 @@
       <td><%= product.price %></td>
       <td><%= product.description %></td>
       <td><%= link_to User.find(product.user_id).name , User.find(product.user_id) %></td>
-       <> <%= link_to "Show this product", product %></ td>
+      <td> <%= link_to "Show this product", product %></td>
+      <td><%= link_to "Edit this product", edit_product_path(product) %></td>
+
     </p>
   <% end %>
 </div>
